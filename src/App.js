@@ -1,30 +1,29 @@
+
+import React from 'react';
 import './App.css';
 
-
+import {Routes, Route} from "react-router-dom";
+import Home from './Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Portfolio from './pages/Portofolio';
+import Contact from './pages/Contact';
 import Header from './components/header/header';
-
-import Hero from './components/ui/Hero';
-
-import Counter from './components/ui/Counter';
-
-import Services from './components/ui/Services';
-
-import About from './components/ui/About';
-
-import Newsletter from './components/ui/Newsletter';
-
 import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-      <Header/>
-      <Hero />
-      <Counter />
-      <Services />
-      <About />
-      <Newsletter />
-      <Footer />
+    <Header />
+        <Routes>
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+    <Footer />
+
     </>
   );
 }

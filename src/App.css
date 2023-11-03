@@ -60,6 +60,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body{
   background: var(--body-bg);
@@ -71,7 +72,7 @@ a{
   color: var(--link-color);
 }
 
-h1,h2{
+h1,h2,h3{
   color:var(--heading-color);
   font-style: 2rem;
 }

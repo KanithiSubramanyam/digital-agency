@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/hero.css'
 import HeroImage from '../../images/hero-img.png'
 

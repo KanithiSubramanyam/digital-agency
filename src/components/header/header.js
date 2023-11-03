@@ -53,9 +53,9 @@ const Header = () => {
           </Link>
 
           <div className='navigation'>
-            <ul className='menu'>
+            <ul className='menu' style={{ listStyleType: 'none' }}>
               {navLinks.map((item, index) => (
-                <li className='menu__item' style={{ textDecoration: 'none' }} key={index}>
+                <li className='menu__item' style={{ textDecoration: 'none',listStyleType: 'none'  }} key={index}>
                   <Link to={item.path} className='menu__link'>
                     {item.display}
                   </Link>
